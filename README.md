@@ -42,3 +42,7 @@ Pearson Correlation Coefficient 1 : 0.6135622669936321
 ![su](image/su.png)
 
 각 루브릭 별 가중치에 따라 총점을 계산해 kappa score, pearson correlation 측정
+
+## Reference
+* [에세이 글 평가 데이터](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=545)
+* [monologg/kobert](https://github.com/monologg/KoBERT-Transformers)
