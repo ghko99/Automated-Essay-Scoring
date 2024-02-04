@@ -87,14 +87,6 @@ def get_sentence_model(n_outputs):
 
     return model
 
-def get_y(X):
-    y = []
-    for i in tqdm(range(len(X))):
-         y.append([round(X['exp1'][i]/3, 2), round(X['exp2'][i]/3, 2), round(X['exp3'][i]/3, 2), round(X['org1'][i]/3, 2),
-                           round(X['org2'][i]/3, 2), round(X['org3'][i]/3, 2), round(X['org4'][i]/3, 2), round(X['cont1'][i]/3, 2), round(X['cont2'][i]/3, 2), round(X['cont3'][i]/3, 2), round(X['cont4'][i]/3, 2)])
-    y = pd.DataFrame(y)
-    return y
-
 # data generator
 class DataGenerator(keras.utils.Sequence):
     def __init__(self,embedded_essay,y, ids, batch_size=64, shuffle=True):
